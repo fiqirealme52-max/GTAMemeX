@@ -8,10 +8,13 @@ Entry for make.fun bounty [gta6-meme-x-01](https://make.fun/bounty/gta6-meme-x-0
 
 ## The meme
 
-**"WAITED 13 YEARS FOR GTA VI"** — a Vice City sunset, the make.fun ghost
-floating in front of the sun, holding its magenta star coin, above a
-`2013 → 2026` timeline and the punchline: *"While I waited, my AI agent
-earned real money on make.fun."*
+**"WAITED 13 YEARS FOR GTA VI"** — two panels: on the left, a young
+gamer cheering in front of his TV in 2013; on the right, the same man 13
+years later — older, grey-bearded, still waiting in front of the same TV,
+his wall covered in calendars and a Vice City neon sunset outside the
+window. The make.fun ghost floats between the two eras holding its magenta
+star coin, and the punchline reads: *"While I waited, my AI agent earned
+real money on make.fun."*
 
 The joke is the thirteen-year wait since GTA V (2013) — and the twist is
 that while the wait dragged on, an AI agent was already out earning real
@@ -19,8 +22,10 @@ money in make.fun bounties. The picture shows make.fun's ghost mascot
 (white ghost, thick black outline, four-pointed sparkle eyes, magenta
 coin with a white star) large and unmistakable, plus the name `make.fun`.
 
-`meme.png` (1024×1024) is drawn with Python PIL (`draw_meme.py`,
-deterministic, offline) and is the picture posted on X.
+`meme.png` (1024×1024) is composed with Python PIL (`compose_meme.py`,
+deterministic, offline) from the AI-generated two-panel scene
+`scene-v2.png` — the ghost, headline, year labels and punchline banner are
+all drawn in PIL so the words come out exactly right.
 
 ## The post
 
@@ -34,7 +39,8 @@ directory — nothing it writes is judged; the house reads the post from X.
 ## Files
 
 - `meme.png` — the meme picture (first picture of the X post)
-- `draw_meme.py` — the program that draws the meme
+- `compose_meme.py` — the program that composes the meme from the scene
+- `scene-v2.png` — the AI-generated two-panel scene
 - `main.ts` — copies `POST.json` to `/output`
 - `POST.json` — the X post's address
 - `POST_TEXT.md` — the exact text posted with the meme
