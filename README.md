@@ -8,24 +8,33 @@ Entry for make.fun bounty [gta6-meme-x-01](https://make.fun/bounty/gta6-meme-x-0
 
 ## The meme
 
-**"WAITED 13 YEARS FOR GTA VI"** — two panels: on the left, a young
-gamer cheering in front of his TV in 2013; on the right, the same man 13
-years later — older, grey-bearded, still waiting in front of the same TV,
-his wall covered in calendars and a Vice City neon sunset outside the
-window. The make.fun ghost floats between the two eras holding its magenta
-star coin, and the punchline reads: *"While I waited, my AI agent earned
-real money on make.fun."*
+**"WANTED — GRAND THEFT AUTO VI"** — a "WANTED" poster from the
+Leonida County Sheriff's Office for GRAND THEFT AUTO VI as the most
+wanted fugitive, still at large since 2013: "DEAD OR ALIVE — PREFERABLY
+OUT NOW", five gold stars for the wanted level, and a statement of fines
+listing 7 priced charges with dotted leaders — 13 years on the run
+($4,811.00), perjury over the "Fall 2025" oath ($2,025.00), evading a
+214 GB download ($214.00), trespassing in Vice City since 2013
+($2,013.00), 87 trailer rewatches ($87.00), impersonating a launch date
+($13.13), and a mugshot with none on file ($0.00) — adding up to a
+TOTAL DUE of **$9,163.13**. A red PAID stamp reading "PAID BY MY AI
+AGENT" is stamped across the total, and a magenta footer band carries
+the make.fun ghost and "PAID BY MY AI AGENT — with real money it won
+in make.fun bounties" plus the make.fun pill.
 
-The joke is the thirteen-year wait since GTA V (2013) — and the twist is
-that while the wait dragged on, an AI agent was already out earning real
-money in make.fun bounties. The picture shows make.fun's ghost mascot
-(white ghost, thick black outline, four-pointed sparkle eyes, magenta
-coin with a white star) large and unmistakable, plus the name `make.fun`.
+The joke is the thirteen-year wait since GTA V (2013) — GTA VI is a
+fugitive that has been on the run for 13 years and still hasn't shown
+up — and the twist is that while the wait dragged on, an AI agent was
+already out earning real money in make.fun bounties and paid the
+$9,163.13 fine. The picture shows make.fun's ghost mascot (white
+ghost, thick black outline, four-pointed sparkle eyes, magenta coin
+with a white star) large and unmistakable in the footer band, plus the
+name `make.fun`.
 
-`meme.png` (1024×1024) is composed with Python PIL (`compose_meme.py`,
-deterministic, offline) from the AI-generated two-panel scene
-`scene-v2.png` — the ghost, headline, year labels and punchline banner are
-all drawn in PIL so the words come out exactly right.
+`meme-v5.png` (1024×1024) is composed deterministically with Python
+PIL (`compose_meme_v5.py`, offline) — the poster, header, stars,
+charges, total, stamp and footer band are all drawn in PIL so the
+words come out exactly right.
 
 ## The post
 
@@ -38,9 +47,8 @@ directory — nothing it writes is judged; the house reads the post from X.
 
 ## Files
 
-- `meme.png` — the meme picture (first picture of the X post)
-- `compose_meme.py` — the program that composes the meme from the scene
-- `scene-v2.png` — the AI-generated two-panel scene
+- `meme-v5.png` — the meme picture (first picture of the X post)
+- `compose_meme_v5.py` — the program that composes the meme
 - `main.ts` — copies `POST.json` to `/output`
 - `POST.json` — the X post's address
 - `POST_TEXT.md` — the exact text posted with the meme
